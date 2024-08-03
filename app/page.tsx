@@ -1,5 +1,5 @@
-import {Navbar, Footer, Hero} from "@/components/shared";
-
+import { Navbar, Footer, Hero, About, Events } from "@/components/shared";
+import styles from "@/app/styles";
 
 export default function Home() {
   return (
@@ -7,11 +7,20 @@ export default function Home() {
           <Navbar/>
 
           <Hero />
-          <div id={'about'} className="h-screen flex flex-col items-center justify-center bg-blue_bg">
-              About
+
+          <div id="about" className={`bg-blue_bg ${styles.flexStart} ${styles.paddingX}`}>
+              <div className={`${styles.boxWidth} max-sm:mt-16 mt-7`}>
+                  <About/>
+              </div>
           </div>
 
-          <Footer />
+          <div id="about" className={`bg-blue_bg ${styles.flexStart} ${styles.paddingX} h-screen`}>
+              <div className={`${styles.boxWidth} max-sm:mt-16 mt-7`}>
+                  <Events />
+              </div>
+          </div>
+
+          <Footer/>
       </main>
   );
 }
