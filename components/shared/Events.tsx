@@ -1,13 +1,21 @@
-import styles from "@/app/styles";
+import { ShieldAlert } from "lucide-react";
+
+import {
+    Alert,
+    AlertDescription,
+    AlertTitle,
+} from "@/components/ui/alert";
 
 const Events = () => {
     return (
-        <section className={`flex md:flex-row flex-col ${styles.paddingY}`}>
-            <div className={`flex ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
-                Events
-            </div>
-        </section>
-    );
+        <Alert className="" variant="destructive">
+            <ShieldAlert className="h-5 w-5 " />
+            <AlertTitle>Login Failed!</AlertTitle>
+            <AlertDescription>
+                Invalid username or password
+            </AlertDescription>
+        </Alert>
+    )
 }
 
 export default Events;
