@@ -1,14 +1,14 @@
-import type { Config } from "tailwindcss"
-const { fontFamily } = require("tailwindcss/defaultTheme")
+import type { Config } from "tailwindcss";
+const { fontFamily } = require("tailwindcss/defaultTheme");
 
 const config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -20,8 +20,8 @@ const config = {
     },
     extend: {
       colors: {
-        blue_bg: '#0d1117',
-        dark_blue: '#12141C',
+        blue_bg: "#0d1117",
+        dark_blue: "#12141C",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -79,11 +79,11 @@ const config = {
         sans: ["var(--font-ubuntu)", ...fontFamily.sans],
       },
       backgroundImage: {
-        'hero-img': "url('../public/assets/bg4.webp')",
-      }
+        "hero-img": "url('../public/assets/bg4.png')",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config
+} satisfies Config;
 
-export default config
+export default config;
