@@ -6,7 +6,7 @@ const Team = () => {
     return <div className="bg-blue_bg">
         <Navbar/>
         <div className="py-20 h-screen flex justify-center items-center">
-            <h1 className={`${styles.heading2}`}>Meat the Team</h1>
+            <h1 className={`${styles.heading2}`}>Meet the Team</h1>
         </div>
         <Footer />
     </div>;
