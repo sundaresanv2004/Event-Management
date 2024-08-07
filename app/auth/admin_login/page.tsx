@@ -20,7 +20,7 @@ const formSchema = z.object({
     password: z.string(),
 })
 
-const Admin = () => {
+const AdminLogin = () => {
     const [errorState, setErrorStatus] = useState('hidden');
     const [loading, setLoading] = useState("hidden");
 
@@ -143,4 +143,4 @@ const Admin = () => {
     );
 };
 
-export default Admin;
+export default AdminLogin;

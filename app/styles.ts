@@ -12,7 +12,7 @@ const styles = {
     marginY: "sm:my-16 my-6",
 
     heading1: "scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl",
-    heading2: "scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0",
+    heading2: "text-2xl md:text-3xl lg:text-4xl font-semibold",
     heading3: "scroll-m-20 text-2xl font-semibold tracking-tight",
     heading4: "scroll-m-20 text-xl font-semibold tracking-tight",
     paragraph: "leading-7 [&:not(:first-child)]:mt-6",
